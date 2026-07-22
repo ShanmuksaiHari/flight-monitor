@@ -1,0 +1,9 @@
+kafka-python==2.0.2
+dbt-duckdb==1.8.1
+apache-airflow==2.9.3
+streamlit==1.37.0
+pydeck==0.9.1
+requests==2.32.3
+python-dotenv==1.0.1
+anthropic==0.34.0
+duckdb==1.0.0
