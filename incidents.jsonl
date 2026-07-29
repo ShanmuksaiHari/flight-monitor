@@ -1,1 +1,6 @@
 {"timestamp": "2026-07-29T18:54:01.720543", "alarm_type": "TEST", "severity": "warning", "message": "This is a test alarm from your Flight Monitor pipeline \u2014 everything is working!", "status": "fired"}
+{"timestamp": "2026-07-29T19:06:39.079606", "alarm_type": "VALIDITY", "severity": "critical", "message": "BLOCKED \u2014 invalid record 71C387: longitude -124.848399 outside California bounds", "status": "fired"}
+{"timestamp": "2026-07-29T19:06:40.167012", "alarm_type": "VALIDITY", "severity": "critical", "message": "BLOCKED \u2014 invalid record A5CFA5: longitude -124.773073 outside California bounds", "status": "fired"}
+{"timestamp": "2026-07-29T19:06:40.351241", "alarm_type": "VALIDITY", "severity": "critical", "message": "BLOCKED \u2014 invalid record A2A38E: longitude -124.674583 outside California bounds", "status": "fired"}
+{"timestamp": "2026-07-29T19:06:40.513225", "alarm_type": "VALIDITY", "severity": "critical", "message": "BLOCKED \u2014 invalid record A5CFA5: longitude -124.810718 outside California bounds", "status": "fired"}
+{"timestamp": "2026-07-29T19:06:40.667150", "alarm_type": "VALIDITY", "severity": "critical", "message": "BLOCKED \u2014 invalid record A2A38E: longitude -124.712706 outside California bounds", "status": "fired"}

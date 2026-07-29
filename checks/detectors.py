@@ -5,7 +5,7 @@ from datetime import datetime
 
 # California bounding box
 CA_LAT_MIN, CA_LAT_MAX = 32.5, 42.0
-CA_LON_MIN, CA_LON_MAX = -124.5, -114.0
+CA_LON_MIN, CA_LON_MAX = -125.5, -114.0
 
 # Alarm thresholds
 FRESHNESS_TIMEOUT = 60      # seconds — alert if no message in 60s
@@ -81,12 +81,14 @@ def check_validity(flight):
             errors.append(f"longitude {lon} outside California bounds")
 
     # Check altitude
-    alt = flight.get("altitude", 0)
+    alt_raw = flight.get("altitude")
+    alt = 0 if alt_raw == "ground" else float(alt_raw or 0)
     if not (MIN_ALTITUDE <= alt <= MAX_ALTITUDE):
         errors.append(f"altitude {alt} out of range (0-45000ft)")
 
     # Check velocity
-    vel = flight.get("velocity", 0)
+    vel_raw = flight.get("velocity")
+    vel = float(vel_raw or 0)
     if not (MIN_VELOCITY <= vel <= MAX_VELOCITY):
         errors.append(f"velocity {vel} out of range (0-700 knots)")
 
