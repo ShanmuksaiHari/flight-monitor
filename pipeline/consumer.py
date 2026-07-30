@@ -57,10 +57,10 @@ def write_to_bronze(conn, flights):
             flight.get("callsign"),
             flight.get("latitude"),
             flight.get("longitude"),
-            flight.get("altitude"),
+            float(0 if flight.get("altitude") == "ground" else (flight.get("altitude") or 0)),
             flight.get("velocity"),
             flight.get("heading"),
-            flight.get("on_ground", False),
+            bool(flight.get("on_ground") == True),
             flight.get("timestamp"),
             flight.get("source"),
             ingestion_time

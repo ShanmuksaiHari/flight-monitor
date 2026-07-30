@@ -1,0 +1,31 @@
+[0m13:39:19.843968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a02c60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104aed1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1050fdee0>]}
+
+
+============================== 13:39:19.847073 | 8204e3a9-07f6-400a-85ce-f683548e450d ==============================
+[0m13:39:19.847073 [info ] [MainThread]: Running with dbt=1.10.8
+[0m13:39:19.847385 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/shanmuksaihari/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt init flight_monitor', 'send_anonymous_usage_stats': 'True'}
+[0m13:39:19.856387 [info ] [MainThread]: Creating dbt configuration folder at /Users/shanmuksaihari/.dbt
+[0m13:39:19.857447 [debug] [MainThread]: Starter project path: /Users/shanmuksaihari/projects/flight-monitor/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m13:39:19.860771 [info ] [MainThread]: 
+Your new dbt project "flight_monitor" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:39:19.860942 [info ] [MainThread]: Setting up your profile.
+[0m13:39:23.254107 [info ] [MainThread]: Profile flight_monitor written to /Users/shanmuksaihari/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m13:39:23.269451 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 3.4674187, "process_in_blocks": "0", "process_kernel_time": 0.201269, "process_mem_max_rss": "130367488", "process_out_blocks": "0", "process_user_time": 0.828117}
+[0m13:39:23.269850 [debug] [MainThread]: Command `dbt init` succeeded at 13:39:23.269777 after 3.47 seconds
+[0m13:39:23.270087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051a3470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1046e5070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1051eb590>]}
+[0m13:39:23.270306 [debug] [MainThread]: Flushing usage events
+[0m13:39:23.502747 [debug] [MainThread]: An error was encountered while trying to flush usage events
